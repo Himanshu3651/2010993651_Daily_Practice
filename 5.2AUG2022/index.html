@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fncClick(){
+            //document.getElementById("p1").innerHTML="Hello";
+        //alert("Hi,How Are You");
+        //var n1="5";
+        //var n2="6";
+        //     var n1=document.getElementById("n1").value;
+        //     var n2=document.getElementById("n2").value;
+        //     if(!isNaN(n1)&&!isNaN(n2)){
+
+        
+        //         n1=Number(n1);
+        //         n2=Number(n2);
+        //         document.getElementById("p1").innerHTML=n1+n2;}
+        //     else{
+        //         document.getElementById("p1").innerHTML="<span style='color:red'>Please Enter Numeric Value .</span>";
+                
+        //     }
+        // }
+        let n1=document.getElementById("n1").value;
+        let n2=document.getElementById("n2").value;
+        n1=Number(n1);
+        n2=Number(n2);
+        if(n1>=n2){
+        var rb=(n1/n2);
+        var remba=n1%n2;
+        document.getElementById("p1").innerHTML="R_BALLS " + parseInt(rb) + "           "+ "Rem balls  "+remba;
+        }
+        else{
+            document.getElementById("p1").innerHTML="RE ENTER NUMBER";
+        }
+
+    //     for(let i=2;i<n1;i++){
+    //         if(n1%i==0 && n1!=i){
+
+            
+    //         document.getElementById("p1").innerHTML="Not Prime Number";
+    //     break;
+    //     }
+        
+    //     else{
+    //         document.getElementById("p1").innerHTML="Prime Number";
+    //     }
+    // }
+        }
+              </script>
+</head>
+<body>
+    <input type="text" name="n1" id="n1">
+    
+    <input type="text" name="n2" id="n2">
+    <button onclick="fncClick()">Click</button><br>
+    <p1 id="p1"></p1><br>
+</body>
+</html>
